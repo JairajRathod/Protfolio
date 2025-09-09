@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Jairaj Rathod, Portfolio, Web Developer, Figma Designer, WordPress Developer, UI/UX Designer">
+    <meta name="description" content="Jairaj Rathod's Portfolio - Showcasing expertise in WordPress Development and Figma Design. Explore projects, skills, and experience in web development and design.">
+    <link rel="icon" href="./assets/jairaj-rathod-profile-photo.webp" type="image/x-icon">
+    <title>Jairaj Rathod Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .nav-bar {
+            border-radius: 50px;
+        }
+        .nav-buttons:hover {
+            background-color: #FF4C29;
+            color: white;
+        }
+    </style>
+</head>
+<body style="background-color: #0A0F1C;" class="flex flex-col justify-start items-center min-h-screen w-full lg:gap-[150px] gap-[50px] p-5">
+
+    <!-- Navigaiton Bar Section -->
+    <nav class="bg-none md:bg-white rounded-[50px] w-full md:w-fit">
+        <div class="flex justify-start items-center">
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex justify-center items-center">
+            <div class="p-2.5 pl-5 pr-5 w-fit font-semibold rounded-l-[50px] nav-buttons"><a href="#hero-section">Home</a></div>
+            <div class="p-2.5 pl-5 pr-5 w-fit font-semibold nav-buttons"><a href="#about-section">About</a></div>
+            <div class="p-2.5 pl-5 pr-5 w-fit font-semibold nav-buttons"><a href="#experience-section">Experience</a></div>
+            <div class="p-2.5 pl-5 pr-5 w-fit font-semibold nav-buttons"><a href="#skills-section">Skills</a></div>
+            <div class="p-2.5 pl-5 pr-5 w-fit font-semibold nav-buttons"><a href="#projects-section">Projects</a></div>
+            <div class="p-2.5 pl-5 pr-5 w-fit font-semibold rounded-r-[50px] nav-buttons"><a href="#contact-section">Contact</a></div>
+            </div>
+
+            <!-- Mobile Menu Icon -->
+            <div class="md:hidden">
+            <button id="menu-btn" class="focus:outline-none">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            </div>
+        </div>
+
+        <!-- Mobile Popup Menu -->
+        <div id="mobile-menu" class="fixed inset-0 bg-black hidden flex-col justify-center items-center z-40 p-10">
+            <button id="close-btn" class="absolute top-5 right-5 text-white text-3xl font-bold">&times;</button>
+            <div class="flex flex-col items-center gap-6 text-white text-2xl font-semibold">
+              <a href="#hero-section" class="hover:text-gray-300" onclick="toggleMenu()">Home</a>
+              <a href="#about-section" class="hover:text-gray-300" onclick="toggleMenu()">About</a>
+              <a href="#experience-section" class="hover:text-gray-300" onclick="toggleMenu()">Experience</a>
+              <a href="#skills-section" class="hover:text-gray-300" onclick="toggleMenu()">Skills</a>
+              <a href="#projects-section" class="hover:text-gray-300" onclick="toggleMenu()">Projects</a>
+              <a href="#contact-section" class="hover:text-gray-300" onclick="toggleMenu()">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Banner Main Section -->
+    <div style="color: white; max-width: 550px;" class="flex flex-col justify-center items-center gap-6 pt-[50px] pb-[50px]" id="hero-section">
+
+        <!-- Heading -->
+        <div class="text-5xl font-bold text-center">Hi, I'm <span style="color: #FF4C29">Jairaj</span> <span style="color: #61DAFB">Rathod</span></div>
+
+        <!-- designation -->
+        <div class="text-3xl font-semibold text-center">WordPress Developer & Figma Designer</div>
+
+        <!-- description -->
+        <div class="text-lg text-center ">
+            I Have 1+ Year Experience In Web Development And Designing. I Love To Create Beautiful, Fast, And Responsive Websites That Provide An Excellent User Experience. 
+        </div>
+
+        <!-- buttons -->
+        <div class="flex justify-center items-center gap-5">
+            <button class="bg-[#FF4C29] text-white font-semibold p-2.5 pl-5 pr-5 rounded-full hover:bg-gray-300 hover:text-black"><a href="#contact-section">Hire Me</a></button>
+            <a href="/assets/JAIRAJ RATHOD RESUME.pdf" class="bg-transparent border-2 border-[#61DAFB] text-[#61DAFB] font-semibold p-2.5 pl-5 pr-5 rounded-full hover:bg-white hover:text-black">Download CV</a>
+        </div>
+
+    </div>
+
+
+    <!-- About Section -->
+    <div class="max-w-[980px] w-full flex flex-col md:flex-row items-center gap-12 pt-[50px] pb-[50px]" id="about-section">
+    
+        <!-- Profile Circle -->
+        <div class="flex-shrink-0">
+            <img src="/assets/jairaj-rathod-profile-photo.webp" class="w-64 h-64 rounded-full bg-gray-300 shadow-[0_0_25px_5px_rgba(0,191,255,0.5)]"/>
+        </div>
+
+        <!-- About Me Text -->
+        <div class="space-y-4 text-white text-center md:text-left">
+
+            <!-- Heading -->
+            <h2 class="text-3xl font-bold uppercase">About Me</h2>
+
+            <p class="text-gray-300 leading-relaxed">
+                I'm a passionate WordPress Developer and Figma Designer with over 1+ year of experience in creating stunning and user-friendly websites. My expertise lies in designing visually appealing interfaces and developing responsive, high-performance websites that provide an excellent user experience. I am dedicated to staying updated with the latest design trends and web technologies to deliver innovative solutions that meet client needs.
+            </p>
+            <p class="font-semibold">Location: <span class="text-gray-200">India</span></p>
+        </div>
+
+    </div>
+
+
+    <!-- Experience Section -->
+     <div class="flex flex-col justify-center items-center w-full max-w-[768px] pt-[50px] pb-[50px]" id="experience-section">
+        <h2 class="text-white text-center text-3xl font-bold uppercase mb-12">Work Experience</h2>
+
+  <div class="space-y-16 w-full max-w-5xl px-6">
+
+    <!-- Experience Item 1 -->
+    <div class="flex flex-col md:flex-row items-center gap-8">
+      <!-- Circle -->
+      <div class="flex-shrink-0">
+        <img src="/assets/solsakhli-logo.jpeg" class="w-40 h-40 rounded-full border-[6px] border-[#FF4C29] shadow-[0_0_25px_5px_rgba(255,0,0,0.5)]"></div>
+      </img>
+      <!-- Card -->
+      <div class="flex-1 bg-gradient-to-r from-cyan-500 to-blue-600 p-6 rounded-xl shadow-lg">
+        <h3 class="font-bold text-lg text-white">WordPress Development Team Lead - Solsakhli LLC</h3>
+        <ul class="list-disc list-inside text-gray-100 mt-2 space-y-1">
+            <li>Leading Design and Development Team. Explain project details, start and end data, Task destribution and Taking updates./li>
+            <li>Communicate Client to Understand there Requirements, giving project updates through email or meeting.</li>
+            <li>Research on New Technologies and Trends on to improve our services.</li>
+            <li>Set Webuzo server and other thing for WordPress. Plugin setup, Theme setup, other additional setting</li>
+            <li>Train new interns on WordPress Development and UI/UX Design</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Experience Item 2 (reversed layout) -->
+    <div class="flex flex-col md:flex-row-reverse items-center gap-8 ">
+      <!-- Circle -->
+      <div class="flex-shrink-0">
+        <img src="/assets/sanjivni-techno.jpeg" class="w-40 h-40 rounded-full border-[6px] border-[#FF4C29] shadow-[0_0_25px_5px_rgba(255,0,0,0.5)]"></img>
+      </div>
+      <!-- Card -->
+      <div class="flex-1 bg-gradient-to-r from-cyan-500 to-blue-600 p-6 rounded-xl shadow-lg">
+        <h3 class="font-bold text-lg text-white">Designer & React Developer - Sanjivni Techno</h3>
+        <ul class="list-disc list-inside text-gray-100 mt-2 space-y-1">
+          <li>Lead a team comprising a designer, a frontend developer, and a backend developer intern.</li>
+          <li>Contributed to the design of a billing app by creating the software structure.</li>
+          <li>Work on React to create website based Projects.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+     </div>
+    
+
+     <!-- SKill Section -->
+    <div class="flex flex-col justify-center items-center w-full max-w-[768px] pt-[50px] pb-[50px]" id="skills-section">
+        <!-- Section Heading -->
+  <h2 class="text-3xl text-white font-bold uppercase mb-10">Skills & Expertise</h2>
+
+  <!-- Skills Container -->
+  <div class="flex flex-wrap justify-center gap-4 max-w-4xl">
+
+    <!-- Skill Item -->
+    <div class="flex items-center gap-2 bg-white text-black font-semibold px-2 py-2 pr-4 rounded-full">
+      <img class="w-6 h-6 rounded-full" src="../assets/html-icon.webp"></img>
+      HTML
+    </div>
+
+    <!-- Skill Item -->
+    <div class="flex items-center gap-2 bg-white text-black font-semibold px-2 py-2 pr-4 rounded-full">
+      <img class="w-6 h-6 rounded-full" src="../assets/css-icon.webp"></img>
+      CSS
+    </div>
+
+    <!-- Skill Item -->
+    <div class="flex items-center gap-2 bg-white text-black font-semibold px-2 py-2 pr-4 rounded-full">
+      <img class="w-6 h-6 rounded-full" src="../assets/javascript-icon.webp"></img>
+      JavaScript
+    </div>
+
+    <!-- Skill Item -->
+    <div class="flex items-center gap-2 bg-white text-black font-semibold px-2 py-2 pr-4 rounded-full">
+      <img class="w-6 h-6 rounded-full" src="../assets/python-icon.webp"></img>
+      Python
+    </div>
+
+    <!-- Skill Item -->
+    <div class="flex items-center gap-2 bg-white text-black font-semibold px-2 py-2 pr-4 rounded-full">
+      <img class="w-6 h-6 rounded-full" src="../assets/tailwind-css-icon.webp"></img>
+      Tailwind CSS
+    </div>
+
+    <!-- Skill Item -->
+    <div class="flex items-center gap-2 bg-white text-black font-semibold px-2 py-2 pr-4 rounded-full">
+      <img class="w-6 h-6 rounded-full" src="../assets/react-icon.webp"></img>
+      React
+    </div>
+
+    <!-- Skill Item -->
+    <div class="flex items-center gap-2 bg-white text-black font-semibold px-2 py-2 pr-4 rounded-full">
+      <img class="w-6 h-6 rounded-full" src="../assets/mysql-icon.webp"></img>
+      MySQL
+    </div>
+
+    <!-- Skill Item -->
+    <div class="flex items-center gap-2 bg-white text-black font-semibold px-2 py-2 pr-4 rounded-full">
+      <img class="w-6 h-6 rounded-full" src="../assets/figma-logo.webp"></img>
+      Figma
+    </div>
+
+    <!-- Skill Item -->
+    <div class="flex items-center gap-2 bg-white text-black font-semibold px-2 py-2 pr-4 rounded-full">
+      <img class="w-6 h-6 rounded-full" src="../assets/canva-logo.webp"></img>
+      Canva
+    </div>
+
+    <!-- Skill Item -->
+    <div class="flex items-center gap-2 bg-white text-black font-semibold px-2 py-2 pr-4 rounded-full">
+      <img class="w-6 h-6 rounded-full" src="../assets/midjourney-logo.webp"></img>
+      Midjourney
+    </div>
+
+    <!-- Skill Item -->
+    <div class="flex items-center gap-2 bg-white text-black font-semibold px-2 py-2 pr-4 rounded-full">
+      <img class="w-6 h-6 rounded-full" src="../assets/wordpress-icon.webp"></img>
+      WordPress
+    </div>
+
+    <!-- Skill Item -->
+    <div class="flex items-center gap-2 bg-white text-black font-semibold px-2 py-2 pr-4 rounded-full">
+      <img class="w-6 h-6 rounded-full" src="../assets/salesforce-icon.webp"></img>
+      SalesForce
+    </div>
+
+    <!-- Skill Item -->
+    <div class="flex items-center gap-2 bg-white text-black font-semibold px-2 py-2 pr-4 rounded-full">
+      <img class="w-6 h-6 rounded-full" src="../assets/divi-icon.webp"></img>
+      Divi
+    </div>
+
+    <!-- Skill Item -->
+    <div class="flex items-center gap-2 bg-white text-black font-semibold px-2 py-2 pr-4 rounded-full">
+      <img class="w-6 h-6 rounded-full" src="../assets/elementor-icon.webp"></img>
+      Elementor
+    </div>
+
+    <!-- Skill Item -->
+    <div class="flex items-center gap-2 bg-white text-black font-semibold px-2 py-2 pr-4 rounded-full">
+      <img class="w-6 h-6 rounded-full" src="../assets/github-icon.webp"></img>
+      Git/GitHub
+    </div>
+
+    
+
+        </div>
+    </div>
+
+
+    <!-- projects section -->
+     <div id="projects-section" class="pt-[50px] pb-[50px]">
+
+        <div>
+            <h2 class="text-3xl text-white font-bold uppercase mb-10 text-center">FEATURED PROJECTS</h2>
+        </div>
+
+        <div>
+            <div class="max-w-5xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+                <!-- Project Card 1 -->
+                <a class="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer" href="https://mehowhendzel.com/" target="_blank">
+                    <img src="/assets/mehow-hendzel-image.webp" class="h-48 w-full bg-gray-300"></img>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-2">Mehow Hendzel (Website)</h3>
+                    </div>
+                </a>
+                <!-- Project Card 2 -->
+                <a class="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer" href="https://bolarct.org/" target="_blank">
+                    <img src="/assets/bolar-image.webp" class="h-48 w-full bg-gray-300"></img>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-2">Bolar Animal Shelter (Website)</h3>
+                    </div>
+                </a>
+                <!-- Project Card 3 -->
+                <a class="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer" href="https://climate-verso.net/" target="_blank">
+                    <img src="/assets/climate-verso-image.webp" class="h-48 w-full bg-gray-300"></img>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-2">Climate Verso (Website)</h3>
+                    </div>
+                </a>
+                <!-- Project Card 4 -->
+                <a class="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer" href="https://trugiving.com/" target="_blank">
+                    <img src="/assets/trugiving-image.webp" class="h-48 w-full bg-gray-300"></img>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-2">TrueGiving (Website)</h3>
+                    </div>
+                </a>
+                <!-- Project Card 5 -->
+                <a class="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer" href="https://solwhitelabel.com/" target="_blank">
+                    <img src="/assets/solwhitelable-image.webp" class="h-48 w-full bg-gray-300"></img>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-2">Sol White Label (Website)</h3>
+                    </div>
+                </a>
+                <!-- Project Card 6 -->
+                <a class="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer" href="https://www.figma.com/design/xcz30REGAyOi3wr1bchSvJ/UI-UX-Designs?node-id=0-1&t=bIrYJDtUNA7paPpL-1" target="_blank">
+                    <img src="/assets/figma-image.webp" class="h-48 w-full bg-gray-300"></img>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-2">UI/UX Design (Figma)</h3>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+
+
+     </div>
+
+
+    <!-- Contact Section -->
+    <div class="text-white max-w-[980px] pt-[50px] pb-[50px]" id="contact-section">
+        <div>
+            <h2 class="text-3xl text-white font-bold uppercase mb-10 text-center">LET'S WORK TOGETHER</h2>
+        </div>
+        
+        <div class="flex flex-col justify-center items-center gap-6 bg-[#3A8195] p-10 rounded-xl">
+
+            <div class="text-center text-lg">
+                Interested in working with me? Let’s connect and build something amazing together.
+            </div>
+            
+            <div class="text-center ">
+                <div><strong>Email:</strong> rathodjairaj805@gmail.com</div>
+                <div><strong>Mobile Number:</strong> (+91) - 7746912491</div>
+            </div>
+
+            <div class="flex justify-center items-center gap-4">
+                <a href="https://www.linkedin.com/in/jairaj-rathod-47611a21a/"><img src="/assets/linkedin-in-brands-solid-full.svg" class="h-10 w-10 p-2 rounded-[50px] bg-amber-50" /></a>
+                <a href="https://github.com/JairajRathod"><img src="/assets/github-icon.webp" class="h-10 w-10 p-2 rounded-[50px] bg-amber-50" /></a>
+                <a href="https://leetcode.com/u/rathodjairaj805/"><img src="/assets/leetcode-logo.png" class="h-10 w-10 p-2 rounded-[50px] bg-amber-50" /></a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+        closeBtn.addEventListener('click', toggleMenu);
+
+
+    </script>
+</body>
+</html>
